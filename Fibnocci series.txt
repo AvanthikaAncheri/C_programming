@@ -1,0 +1,18 @@
+ Fibnocci series
+
+#include <stdio.h>
+
+int main() {
+    int t1,t2,term,i;
+    t1=0;
+    t2=1;
+    for(i=1;i<20;i++)
+    {
+        printf("%d\n",term);
+        t1=t2;
+        t2=term;
+        term=t1+t2;
+        
+    }
+    return 0;
+}

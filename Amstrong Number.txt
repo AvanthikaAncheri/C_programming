@@ -1,0 +1,24 @@
+Amstrong Number
+
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+    int num,i,orgnum,remainder,result;
+    printf("Enter the number:");
+    scanf("%d",&orgnum);
+    num=orgnum;
+    while(num%2!=0){
+        remainder = num%10;
+        result+=remainder*remainder*remainder;
+        num/=10;
+    }
+    if(result==orgnum){
+        printf("%d is Amstrong number",orgnum);
+     }   
+     else
+     {
+        printf("%d is Not Amstrong number",orgnum);
+    }
+    return 0;
+}

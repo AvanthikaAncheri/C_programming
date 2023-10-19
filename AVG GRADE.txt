@@ -1,0 +1,35 @@
+AVG GRADE
+
+#include <stdio.h>
+int main() {
+    int p,q,r,s,t,n,avg;
+    printf("Enter the marks for each subject");
+    printf("\nEnglish: ");
+    scanf("%d",&p);
+    printf("\nMalayalam: ");
+    scanf("%d",&q);
+    printf("\nPhysics: ");
+    scanf("%d",&r);
+    printf("\nChemistry: ");
+    scanf("%d",&s);
+    printf("\nMaths: ");
+    scanf("%d",&t);
+    avg = (p+q+r+s+t)/5;
+    printf("avg:%d\n",avg);
+    if(avg>80){
+        printf("A GRADE");
+    }
+    else if(avg>70){
+        printf("B GRADE");
+    }
+    else if(avg>60){
+        printf("C GRADE");
+    }
+    else if(avg>=50){
+        printf("D GRADE");
+    }
+    else{
+        printf("FAIL");
+    }
+    return 0;
+}

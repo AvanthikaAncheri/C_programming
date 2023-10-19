@@ -1,0 +1,17 @@
+Digit Sum
+
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+    int i,n,m,sum;
+    printf("Enter the digit:");
+    scanf("%d",&n);
+    while(n>0){
+        m=n%10;
+        sum=sum+m;
+        n/=10;
+    }
+    printf("The sum is %d",sum);
+    return 0;
+}

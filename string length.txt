@@ -1,0 +1,9 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<string.h>
+int main(){
+    char ch[20]={'j','e','n','u','w','h','i','k','l','a'};
+    printf("string length = %d\n",strlen(ch));
+
+    return 0;
+}
